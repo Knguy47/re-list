@@ -1,0 +1,92 @@
+.App {
+  display: flex;
+  height: 100%;
+}
+
+.App-main {
+  display: flex;
+  height: 100%;
+}
+
+.App-sidebar {
+  width: 400px;
+  overflow: auto;
+}
+
+.App-map {
+  flex: 1;
+}
+
+.autocomplete-container {
+  position: absolute;
+  border-bottom: #eee;
+  border-left: #eee;
+  border-right: #eee;
+  border-top: 1px solid #e6e6e6;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 2px 2px;
+  z-index: 1000;
+}
+
+.App-sidebar header {
+  background-color: hsl(180, 51%, 91%);
+  padding: 10px;
+}
+
+.App-sidebar header p {
+  font-weight: bold;
+}
+
+.App-sidebar header label {
+  display: block;
+  margin: 5px 0 10px 0;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.App-sidebar header button {
+  font-size: 0.9rem;
+  font-weight: bold;
+  background-color: hsl(161, 100%, 47%);
+  border: none;
+  border-radius: 3px;
+  padding: 8px 36px;
+  cursor: pointer;
+}
+
+.App-sidebar header button:hover {
+  background-color: hsl(161, 100%, 65%);
+}
+
+.App-sidebar header button:active {
+  background-color: hsl(161, 100%, 40%);
+}
+
+.place-selected {
+  border-left: 3px solid hsl(161, 100%, 47%);
+}
+
+.place-hovered {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.place-list li {
+  border-top: 1px solid #eee;
+}
+
+.place-list li:first-child {
+  border-top: none;
+}
+
+.place-content {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.place-content h2 {
+  font-size: 1rem;
+}
+
+.place-content p {
+  font-size: 0.8rem;
+}
